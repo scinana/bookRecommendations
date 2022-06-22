@@ -1,5 +1,5 @@
 # bookRecommendations
 
-![](try1.png)
+![](try1.PNG)
 
-![](try2.png)
+![](try2.PNG)
