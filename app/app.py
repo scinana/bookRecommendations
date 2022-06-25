@@ -3,9 +3,9 @@ import books
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    gjson = books.graphBubbles()
-    template = render_template('index.html', graphJson=gjson)
-    print(template)
+    gjson = books.graph_bubbles()
+    template = render_template("index.html", graphJson=gjson)
     return template
