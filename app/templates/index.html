@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<style>
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+</style>
+
+   <body>
+      <h1>Book Recommendations</h1>
+      <div id='chart' class='chart'></div>
+      <div class='center'>
+        <button onClick="window.location.reload();">Generate Recommendations</button>
+      </div>
+   </body>
+   <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+   <script type='text/javascript'>
+      const graphs = {{gjson | safe}};
+      Plotly.plot('chart',graphs,{});
+   </script>
+</html>
